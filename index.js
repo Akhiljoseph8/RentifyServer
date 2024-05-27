@@ -9,7 +9,7 @@ const app = express()
 const path = require("path");
 
 //configuring cors in server
-app.use(cors(credentials true))
+app.use(cors(credentials=true))
 app.use(express.json())
 app.use(router)
 app.use('/uploads',express.static('./uploads'))

@@ -12,7 +12,7 @@ const jwtMiddleware = (req, res, next) => {
         next()
 
     } catch (err) {
-        res.status(406).json("Please login first")
+        res.status(406).json(err)
     }
 }
 
